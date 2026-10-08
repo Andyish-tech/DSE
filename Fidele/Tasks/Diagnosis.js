@@ -105,11 +105,7 @@ function analyseMarks(marks, passMark = 50) {
         lowest,
         range,
         passRate        
-        passedCount,
-        failedCount,
-        evenCount,
-        status,
-        grade
+        
     };
 }
 
