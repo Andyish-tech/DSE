@@ -1,3 +1,149 @@
+/* ===== Footer ===== */
+:root {
+  --footer-bg: #16213e;
+  --footer-heading: #ffffff;
+  --footer-text: #d5dbea;
+  --footer-accent: #8da2ff;
+}
+
+.site-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 3rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--footer-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: var(--footer-accent);
+}
+
+.footer-col h2 {
+  margin: 0 0 1rem;
+  color: var(--footer-heading);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.site-footer p {
+  margin: 0 0 0.75rem;
+}
+
+.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--footer-heading);
+  text-decoration: underline;
+}
+
+.site-footer a:focus-visible {
+  outline: 2px solid var(--footer-accent);
+  outline-offset: 3px;
+}
+
+/* Tablet: brand on top, two columns below */
+@media (max-width: 800px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile: single column */
+@media (max-width: 520px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ===== Approach section ===== */
+.approach {
+  background: #f6f7fb;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 4.5rem 1.5rem;
+}
+
+.approach-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.approach-eyebrow {
+  margin: 0 0 1rem;
+  color: #3a56d4;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.approach h2 {
+  margin: 0;
+  color: #16213e;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.approach-body {
+  color: #5b6478;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.approach-body p {
+  margin: 0 0 1rem;
+}
+
+.approach-body ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .approach-inner {
+    grid-template-columns: 1fr;
+  }
 :root {
   color-scheme: light;
   --ink: #192d46;
