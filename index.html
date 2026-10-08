@@ -1,60 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SkillLab Footer</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body id="top">
-  
-  <section class="approach" id="approach">
-    <div class="approach-inner">
-      <div class="approach-title">
-        <p class="approach-eyebrow">The SkillLab approach</p>
-        <h2>Less watching.<br>More creating.</h2>
-      </div>
-      <div class="approach-body">
-        <p>Start with a clear example, practise one skill at a time, and combine what you learn into a finished project.</p>
-        <ul>
-          <li>Build a real page from a design.</li>
-          <li>Test your layout on different screen sizes.</li>
-          <li>Explain your choices and improve through feedback.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- ===== APPROACH SECTION END ===== -->
-
-  <!-- ===== FOOTER START (copy from here into the shared page) ===== -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-
-      <div class="footer-brand">
-        <a href="#top" class="footer-logo">SkillLab<span>.</span></a>
-        <p>Learn. Build. Grow.</p>
-        <p>A fictional academy for classroom practice.</p>
-      </div>
-
-      <nav class="footer-col" aria-label="Footer navigation">
-        <h2>Explore</h2>
-        <ul>
-          <li><a href="#courses">Our courses</a></li>
-          <li><a href="#approach">Our approach</a></li>
-          <li><a href="#top">Back to top &uarr;</a></li>
-        </ul>
-      </nav>
-
-      <div class="footer-col">
-        <h2>Classroom contact</h2>
-        <p>INTANGO TSS &middot; DSE Cohort 2</p>
-        <p>Trainer: Fidèle NDAYISHIMIYE</p>
-        <p>Ask your trainer about the next project.</p>
-      </div>
-
-    </div>
-  </footer>
-  <!-- ===== FOOTER END ===== -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -62,20 +7,20 @@
     <link rel="stylesheet" href="index.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- HEADER -->
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#" class="logo">
+        <a href="#top" class="logo">
           <span class="logo-mark">S</span>
           <span class="logo-text">SkillLab<span class="logo-dot">.</span></span>
         </a>
 
         <nav class="nav" aria-label="Main">
-          <a href="#">Home</a>
+          <a href="#top">Home</a>
           <a href="#courses">Courses</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="#approach">Approach</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <a href="#courses" class="btn btn-primary btn-small">Explore courses &rarr;</a>
@@ -84,8 +29,8 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero">
-        <div class="container hero-grid">
+      <section class="section section-alt">
+        <div class="container two-col">
           <div class="hero-content">
             <p class="eyebrow">Your next chapter starts here</p>
             <h1>Learn the skills.<br /><span class="highlight">Build your future.</span></h1>
@@ -96,7 +41,7 @@
 
             <div class="hero-actions">
               <a href="#courses" class="btn btn-primary">Find your course &rarr;</a>
-              <a href="#" class="link-plain">How we learn &#8599;</a>
+              <a href="#approach" class="link-plain">How we learn &#8599;</a>
             </div>
 
             <p class="hero-note">Practical projects · Clear guidance · Learn by doing</p>
@@ -138,7 +83,7 @@
       </section>
 
       <!-- COURSES -->
-      <section class="courses-section" id="courses">
+      <section class="section" id="courses">
         <div class="container">
           <div class="section-header">
             <div>
@@ -202,6 +147,51 @@
           </div>
         </div>
       </section>
+
+      <!-- APPROACH -->
+      <section class="section section-alt" id="approach">
+        <div class="container two-col">
+          <div>
+            <p class="eyebrow">The SkillLab approach</p>
+            <h2 class="section-title">Less watching.<br />More creating.</h2>
+          </div>
+          <div class="approach-body">
+            <p>Start with a clear example, practise one skill at a time, and combine what you learn into a finished project.</p>
+            <ul class="check-list">
+              <li>Build a real page from a design.</li>
+              <li>Test your layout on different screen sizes.</li>
+              <li>Explain your choices and improve through feedback.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo">SkillLab<span>.</span></a>
+          <p>Learn. Build. Grow.</p>
+          <p>A fictional academy for classroom practice.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="Footer">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="#courses">Our courses</a></li>
+            <li><a href="#approach">Our approach</a></li>
+            <li><a href="#top">Back to top &uarr;</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h2>Classroom contact</h2>
+          <p>INTANGO TSS &middot; DSE Cohort 2</p>
+          <p>Trainer: Fidèle NDAYISHIMIYE</p>
+          <p>Ask your trainer about the next project.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
