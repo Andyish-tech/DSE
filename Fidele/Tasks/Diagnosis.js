@@ -111,6 +111,12 @@ function analyseMarks(marks, passMark = 50) {
         status,
         grade, evenCount,
         status,
+        grade,
+        failedCount,
+        evenCount,
+        status,
+        grade, evenCount,
+        status,
         grade
     };
 }
